@@ -13,7 +13,7 @@ jobs:
         uses: ULL-ESIT-PL-1920/hello-js-action-JDM-ULL-93@v1
         id: hello
         with:
-          who-to-greet: 'Casiano Rodríguz León'
+          who-to-greet: 'Casiano Rodríguez León'
       # Use the output from the `hello` step
       - name: Get the output time
         run: echo "The time was ${{ steps.hello.outputs.time }}"

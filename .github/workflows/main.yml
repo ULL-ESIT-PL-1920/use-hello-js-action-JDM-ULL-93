@@ -8,12 +8,12 @@ jobs:
     steps:
       # To use this repository's private action, you must check out the repository
       - name: Checkout
-          uses: actions/checkout@v2
+        uses: actions/checkout@v2
       - name: Hello world action step
-          uses: ULL-ESIT-PL-1920/hello-js-action-JDM-ULL-93@v1 
-          id: hello
+        uses: ULL-ESIT-PL-1920/hello-js-action-JDM-ULL-93@v1 
+        id: hello
         with:
-          who-to-greet: 'PL - Casiano Rodríguez León'
+        who-to-greet: 'PL - Casiano Rodríguez León'
       # Use the output from the `hello` step
       - name: Get the output time
         run: echo "The time was ${{ steps.hello.outputs.time }}"
